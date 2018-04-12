@@ -18,9 +18,9 @@
 			<div class="main">
 		<div id ="menu">
 			<ul>
-				<li><a href="http://localhost/php/admin.php#">Người dùng </a>
+				<li><a href="https://admin-php.herokuapp.com/admin.php#">Người dùng </a>
 				</li>
-				<li><a href="http://localhost/php/tags.php?>">Tags</a>
+				<li><a href="https://admin-php.herokuapp.com/tags.php?>">Tags</a>
 				</li>
 				<li><a href="#">icon1</a></li>
 				<li><a href="#">icon1</a></li>
