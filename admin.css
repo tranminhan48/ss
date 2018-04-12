@@ -90,3 +90,7 @@ button:active {
 td{
 	color: #ffffff;
 }
+
+button:focus {
+  outline: none;
+}
