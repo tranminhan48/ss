@@ -20,7 +20,7 @@
 		<ul>
 			<li><a href="https://admin-php.herokuapp.com/admin.php#">Người dùng </a>
 			</li>
-			<li><a href="https://admin-php.herokuapp.com/tags.php?>">Tags</a>
+			<li><a href="https://admin-php.herokuapp.com/tags.php?>">Môn Học</a>
 			</li>
 			<li><a href="#">icon1</a></li>
 			<li><a href="#">icon1</a></li>
