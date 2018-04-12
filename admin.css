@@ -1,0 +1,92 @@
+body{
+	height: 100%;		
+	font-family: sans-serif;
+	font-style: 15px;
+}
+#main{
+	width: 1500px;
+	height: auto;
+	margin: 0 auto;
+}
+#menu{
+	float: left;
+	position: fixed;
+	height: 100%;
+	background-color: #2ecc71;
+	width: 150px;
+	left: 0
+}
+#menu ul{
+	height: 100%;
+	padding: 0px;
+	list-style-type: none;
+
+}
+#menu ul li {
+	width: auto;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 0 1em;
+	position: relative;
+
+}
+#menu ul li a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	display: block;
+}
+#menu ul li:hover{
+	background: #141727;
+	color: #fff
+}
+#menu .list1 {
+	background-color: #777777;
+	position: absolute;
+	width: 150px;
+	left: 150px;
+	top: 0px;
+	display: none;
+}
+#menu ul li:hover .list1{	
+	display:block;
+
+}
+#table{
+	width: 1200px;
+	height: 100%;
+	float: right;
+}
+table{
+	margin:0 auto;
+}
+table tr td {
+	width: 150px;
+	height: 30px;
+}
+button {
+
+  padding: 10px 15px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  width: 150px;
+  margin: 0 auto
+}
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+td{
+	color: #ffffff;
+}
