@@ -2,7 +2,6 @@
 	    $url = "https://node-accessable.herokuapp.com/tags";
 	    $json = file_get_contents($url);
 	    $obj = json_decode($json);
-
 	    
 	?>	
 	<!DOCTYPE html>
@@ -40,7 +39,8 @@
 				<th></th>
 			</thead>
 			<?php
-			for ($i=0; $i <count($obj->tags)  ; $i++) { 
+			for ($i=0; $i <count($obj->tags)  ; $i++)
+			 { 
 				echo "<tr style=\" background-color:" . $obj->tags[$i]->color."\">";
 				echo "<td>";
 				echo $obj->tags[$i]->name;
@@ -55,19 +55,18 @@
 				echo "</td>";
 				echo "<td>";
 				echo "</td>";
+				echo "<td>";
+				echo "<Form action=\"https://node-accessable.herokuapp.com/users/{$obj->tags[$i]->_id}/delete\"method=\"get\">";
+				echo "<button>";
+				echo "xóa";	
+				echo "</button>";	
+					echo "</form>";
+				echo "</td>";
 				echo "</tr>";
-
-
 
 						}
 			?>
-			<table style="padding-top: 20px">
-			<tr>
-				<td><button>Thêm</button></td>
-				<td><button>xóa</button></td>
-				<td><button>Sửa</button></td>
-				<td><button>làm mới</button></td>
-			</tr>
+		
 			</table>
 	</div>
 	</div>

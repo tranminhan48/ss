@@ -5,6 +5,11 @@
 
 
 		?>	
+		<script type="text/javascript">
+				function deleleAction(){
+					return	confirm("Bạn có thật sự muốn xóa người dùng không ")
+				}
+		</script>
 
 		<!DOCTYPE html>
 		<html>
@@ -38,8 +43,6 @@
 					<th>Số Điện Thoại </th>
 					<th>Địa chỉ </th>
 					<th>Môn học đăng kí</th>
-					<th>Địa chỉ </th>
-					<th>Môn học đăng kí</th>	
 				</thead>		
 				<?php
 				for ($i=0; $i <count($obj->users)  ; $i++) { 
@@ -51,28 +54,28 @@
 					echo $obj->users[$i]->phone;
 					echo "</td>";
 					echo "<td>";
+					echo $obj->users[$i]->_id;
+					echo "</td>";
+					echo "<td>";
+					echo "</td>";
+					echo "<td>";
+					echo "</td>";
+					echo "<td>";
+					echo "</td>";
+					echo "<td>";
+					echo "<Form action=\"https://node-accessable.herokuapp.com/users/{$obj->users[$i]->_id}/delete\"method=\"get\">";
+					echo "<button>";
+					echo "xóa";	
+					echo "</button>";	
 
-					echo "</td>";
-					echo "<td>";
-					echo "</td>";
-					echo "<td>";
-					echo "</td>";
-					echo "<td>";
-					echo "</td>";
+					echo "</form>";
+					
 					echo "</tr>";
 
 
 
-							}
+							}	
 				?>
-				<table>
-				<tr>
-					<td><button>Thêm</button></td>
-					<td><button>xóa</button></td>
-					<td><button>Sửa</button></td>
-				<td><button>làm mới</button></td>
-				</tr>
-				</table>
 		</div>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
